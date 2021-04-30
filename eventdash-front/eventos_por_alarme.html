@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="itau.svg" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script type="text/javascript" src="loginlogout.js"></script>
+        <script type="text/javascript" src="eventos_por_alarme.js"></script>
+    <title>.: Eventos por Alarme :. </title>
+</head>
+<body onload="validalogin()" style="background-color:rgb(77, 168, 179)">
+        <div class="row text-center pt-2 mb-3" style="background-color:darkgray">
+            <div class="col">
+                <h3 style="color:white;">Relatório de Eventos por Alarme</h3>
+            </div>
+            <div class="col d-print-none">
+                <a href="relatorio.html"><button class="btn btn-primary" > Voltar</button></a>
+                <button class="btn btn-primary" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="container">
+        <div class="card">
+            <div class="m-3">
+                <div class="row d-print-none">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="txtDataInicio" class="form-label">Inicio</label>
+                            <div class="form-outline">
+                                <input type="date" class="form-control" id="txtDataInicio" value="2020-01-01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="txtDataFim" class="form-label">Inicio</label>
+                            <div class="form-outline">
+                                <input type="date" class="form-control" id="txtDataFim" value="2020-02-01">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-print-none mb-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary" onclick="gerarRelatorio()">Gerar Relatório</button>
+                        <button type="button" class="btn btn-primary" onclick="window.print()"><img src="print_white_18dp.svg"></button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="relatorio">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="itau.svg" />
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="loginlogout.js"></script>
+        <script type="text/javascript" src="alarmes.js"></script>
+    <title>.: Relatório de Alarmes :. </title>
+</head>
+<body onload="gerarRelatorio()" style="background-color:rgb(77, 168, 179)">
+    <div class="row text-center pt-2 mb-3" style="background-color:darkgray">
+        <div class="col">
+            <h3 style="color:white;">Relatório de Alarmes</h3>
+        </div>
+        <div class="col d-print-none mb-3">
+            <a href="relatorio.html"><button class="btn btn-primary" > Voltar</button></a>
+            <button class="btn btn-primary" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-print-none mb-3">
+            <button type="button" class="btn btn-primary" onclick="window.print()"><img src="print_white_18dp.svg"></button>
+        </div>
+        <div id="relatorio">
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

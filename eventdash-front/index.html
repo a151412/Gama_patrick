@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="itau.svg" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <title>.: EventDash :. </title>
+</head>
+
+<body style="background-image: url('fundo.jfif');
+            height: 100%;
+            width: 100%;">
+    <div class="row text-center pt-2 mb-3" style="background-color:darkgray">
+        <div class="col">
+            <h3 style="color:white;">Event Dash</h3>
+        </div>
+        <div class="col">
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center h-100">
+
+        <!-- inicio do formulario -->
+        <div class="col-lg-6 col-md-8 h-25" style="margin-top: 200px;margin-bottom: 100px;">
+            <div class="card ">
+                <div class="card-body">
+                    <h3 class="card-title mb-2">Bem-vindo</h3>
+                    <div class="mb-3">
+                        <div class="form-outline">
+                            <input type="text" class="form-control" id="txtLogin" aria-describedby="loginHelp">
+                            <label for="txtLogin" class="form-label">Seu acesso</label>
+                        </div>
+                        <div id="loginHelp" class="form-text">Fique atento às políticas de segurança da Firma.</div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-outline">
+                            <input type="password" class="form-control" id="txtSenha">
+                            <label for="txtSenha" class="form-label">Sua senha</label>
+                        </div>
+                    </div>
+                    
+                    <button type="button" onclick="login()" class="btn btn-primary mb-3">Enviar Dados</button>
+
+                    <h3 id="msgErro"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js" ></script>
+</body>
+</html>
+
+
